@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+    <h1>Notes</h1>
+    <form action="/search" class="search" method="post">
+        <input type="text" name="search" placeholder="Search by title or label">
+        <button type="submit">Search</button>
+    </form>
+    <form action="/add" class="add" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="description" placeholder="Description">
+        <input type="text" name="label" placeholder="Label">
+        <button type="submit">Add</button>
+    </form>
+    <form action="/notes" class="notes" method="get">
+        <button type="submit">View All Notes</button>
+    </form>
+</body>
+
+</html>
